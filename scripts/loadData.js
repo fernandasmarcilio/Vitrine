@@ -10,7 +10,7 @@ function createProductVisited(product) {
 	div.className = 'product';
 
 	let image = document.createElement('img');
-	image.src = product.item.imageName;
+	image.src = 'https:' + product.item.imageName;
 	image.alt = product.item.name;
 
 	let name = document.createElement('h2');
@@ -58,7 +58,7 @@ function createProductRecommended(product) {
 		link.href = product[index].detailUrl;
 
 		let image = document.createElement('img');
-		image.src = product[index].imageName;
+		image.src = 'https:' + product[index].imageName;
 		image.alt = product[index].name;
 
 		let name = document.createElement('h2');
