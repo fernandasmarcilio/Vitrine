@@ -1,0 +1,128 @@
+:root {
+	--title-background-color: #e1efe3;
+	--title-font-color: #11749f;
+	--font-primary-color: #000;
+	--font-second-color: #f40506;
+	--background-color-hover: linear-gradient(to bottom, #e1efe3, transparent);
+	--border-color-hover: #c4e0e1;
+	--color-button: #11749f;
+	--shadow-button: 2px 2px 4px #dbdbdb;
+	--image-background-color: #fff;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Verdana, Tahoma, sans-serif;
+	box-sizing: border-box;
+}
+
+#showCase {
+	width: 100%;
+	display: block;
+	overflow-x: hidden;
+}
+
+.titleShowCase {
+	width: 100%;
+	padding: 10px 10px;
+	background-color: var(--title-background-color);
+	color: var(--title-font-color);
+	font-weight: 500;
+}
+
+/* PRODUCTS VISITED	*/
+#productVisited {
+	float: left;
+	border-right: 1px solid var(--title-background-color);
+}
+
+/* PRODUCTS */
+.product {
+	text-align: center;
+	width: 230px;
+	margin: 5px;
+}
+
+img {
+	width: 176px;
+	height: 176px;
+	margin-top: 5px;
+	padding: 20px;
+	background-color: var(--image-background-color);
+}
+
+.recommended-product:hover {
+	background: var(--background-color-hover);
+}
+
+.recommended-product:hover img {
+	outline: 3px solid var(--border-color-hover);
+	outline-offset: -3px;
+}
+
+a.productLink {
+	text-decoration: none;
+	color: var(--font-primary-color);
+}
+
+h2.nameProduct {
+	text-align: left;
+	height: 51px;
+	overflow: hidden;
+	margin: 0 5px 10px 5px;
+}
+
+.nameProduct,
+.oldPrice {
+	font-size: 13px;
+	font-weight: 500;
+	margin: 0 5px 5px 5px;
+}
+
+.currentPrice,
+.infoPayment {
+	font-size: 13px;
+	font-weight: 500;
+	color: var(--font-second-color);
+	margin: 0 5px 5px 5px;
+}
+
+strong {
+	font-size: 18px;
+	font-weight: 1000;
+}
+
+.price {
+	text-align: left;
+}
+
+/* RECOMMENDED PRODUCTS */
+
+ul#productList {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+li {
+	list-style: none;
+}
+
+.arrow-next {
+	align-self: center;
+	padding: 5px;
+}
+
+.arrow-next.last-position {
+	order: 1000;
+}
+
+.button-next {
+	font-size: 70px;
+	border: none;
+	background-color: transparent;
+	color: var(--color-button);
+	cursor: pointer;
+	text-shadow: var(--shadow-button);
+}
